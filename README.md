@@ -1,5 +1,6 @@
 # Sorting_Visualizer_Pygame
 This is a sorting visualization app.
+
 <b>
 Sorting algorithms:
 1) Bubble Sort
