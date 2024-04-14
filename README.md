@@ -1,8 +1,9 @@
 # Sorting_Visualizer_Pygame
-This is a sorting visualization app.
+This is a sorting visualization app, made using Python's Pygame Library
 
 <b>
 Sorting algorithms:
+
 1) Bubble Sort
   
 2) Selection sort
