@@ -273,13 +273,13 @@ def merge(draw_info, lst, left, mid, right, ascending=True, color_positions={}):
         lst[k] = left_half[i]
         i += 1
         k += 1
-
+    
     while j < len(right_half):
         lst[k] = right_half[j]
         j += 1
         k += 1
 
-    draw_list(draw_info, color_positions, True)
+    draw_list(draw_info, {j: draw_info.green, k: draw_info.red}, True)
 
     yield True
 
@@ -323,7 +323,7 @@ def shell_sort(draw_info, ascending=True):
                 lst[j] = lst[j - gap]
                 j -= gap
             lst[j] = temp
-            draw_list(draw_info, {i: draw_info.green}, True)  # Update visualization after each step
+            draw_list(draw_info, {i: draw_info.green, j: draw_info.red}, True)  # Update visualization after each step
             yield True
         gap //= 2
     return True
